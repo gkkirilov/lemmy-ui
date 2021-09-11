@@ -115,7 +115,7 @@ export class CreatePost extends Component<any, CreatePostState> {
           </h5>
         ) : (
           <div class="row">
-            <div class="col-12 col-lg-6 offset-lg-3 mb-4">
+            <div class="col-12 col-lg-8 mx-auto mb-4">
               <h5>{i18n.t("create_post")}</h5>
               <PostForm
                 communities={this.state.communities}
