@@ -455,14 +455,13 @@ export class Settings extends Component<any, SettingsState> {
                 type="email"
                 id="user-email"
                 class="form-control"
-                placeholder={i18n.t("optional")}
                 value={this.state.saveUserSettingsForm.email}
                 onInput={linkEvent(this, this.handleEmailChange)}
                 minLength={3}
               />
             </div>
           </div>
-          <div class="form-group row">
+          {/* <div class="form-group row">
             <label class="col-lg-5 col-form-label" htmlFor="matrix-user-id">
               <a href={elementUrl} rel="noopener">
                 {i18n.t("matrix_user_id")}
@@ -479,7 +478,7 @@ export class Settings extends Component<any, SettingsState> {
                 pattern="^@[A-Za-z0-9._=-]+:[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
               />
             </div>
-          </div>
+          </div> */}
           <div class="form-group">
             <label>{i18n.t("avatar")}</label>
             <ImageUploadForm

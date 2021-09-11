@@ -39,7 +39,7 @@ export class ListingTypeSelect extends Component<
   render() {
     return (
       <div class="btn-group btn-group-toggle flex-wrap mb-2">
-        <label
+        {/* <label
           title={i18n.t("subscribed_description")}
           className={`btn btn-outline-secondary 
             ${this.state.type_ == ListingType.Subscribed && "active"}
@@ -59,25 +59,23 @@ export class ListingTypeSelect extends Component<
             disabled={UserService.Instance.myUserInfo == undefined}
           />
           {i18n.t("subscribed")}
-        </label>
-        {this.props.showLocal && (
-          <label
-            title={i18n.t("local_description")}
-            className={`pointer btn btn-outline-secondary ${
-              this.state.type_ == ListingType.Local && "active"
-            }`}
-          >
-            <input
-              id={`${this.id}-local`}
-              type="radio"
-              value={ListingType.Local}
-              checked={this.state.type_ == ListingType.Local}
-              onChange={linkEvent(this, this.handleTypeChange)}
-            />
-            {i18n.t("local")}
-          </label>
-        )}
-        <label
+        </label> */}
+        {/* <label
+          title={i18n.t("local_description")}
+          className={`pointer btn btn-outline-secondary ${
+            this.state.type_ == ListingType.Local && "active"
+          }`}
+        >
+          <input
+            id={`${this.id}-local`}
+            type="radio"
+            value={ListingType.Local}
+            checked={this.state.type_ == ListingType.Local}
+            onChange={linkEvent(this, this.handleTypeChange)}
+          />
+          {i18n.t("local")}
+        </label> */}
+        {/* <label
           title={i18n.t("all_description")}
           className={`pointer btn btn-outline-secondary ${
             (this.state.type_ == ListingType.All && "active") ||
@@ -94,7 +92,7 @@ export class ListingTypeSelect extends Component<
             onChange={linkEvent(this, this.handleTypeChange)}
           />
           {i18n.t("all")}
-        </label>
+        </label> */}
       </div>
     );
   }

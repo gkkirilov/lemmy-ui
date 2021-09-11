@@ -354,7 +354,7 @@ export class Home extends Component<any, HomeState> {
       <div>
         {!this.state.loading && (
           <div>
-            <div class="card border-secondary mb-3">
+            {/* <div class="card border-secondary mb-3">
               <div class="card-body">
                 {this.trendingCommunities()}
                 {this.createCommunityButton()}
@@ -367,7 +367,7 @@ export class Home extends Component<any, HomeState> {
                 <div class="card border-secondary mb-3">
                   <div class="card-body">{this.subscribedCommunities()}</div>
                 </div>
-              )}
+              )} */}
 
             <div class="card border-secondary mb-3">
               <div class="card-body">{this.sidebar()}</div>

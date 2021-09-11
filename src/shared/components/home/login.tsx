@@ -201,7 +201,6 @@ export class Login extends Component<any, State> {
               type="email"
               id="register-email"
               class="form-control"
-              placeholder={i18n.t("optional")}
               value={this.state.registerForm.email}
               autoComplete="email"
               onInput={linkEvent(this, this.handleRegisterEmailChange)}
@@ -209,8 +208,8 @@ export class Login extends Component<any, State> {
             />
             {!validEmail(this.state.registerForm.email) && (
               <div class="mt-2 mb-0 alert alert-light" role="alert">
-                <Icon icon="alert-triangle" classes="icon-inline mr-2" />
-                {i18n.t("no_password_reset")}
+                {/* <Icon icon="alert-triangle" classes="icon-inline mr-2" /> */}
+                {/* {i18n.t("no_password_reset")} */}
               </div>
             )}
           </div>

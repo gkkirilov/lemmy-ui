@@ -207,7 +207,7 @@ export class Navbar extends Component<NavbarProps, NavbarState> {
             className={`${!this.state.expanded && "collapse"} navbar-collapse`}
           >
             <ul class="navbar-nav my-2 mr-auto">
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <button
                   className="nav-link btn btn-link"
                   onClick={linkEvent(this, this.handleGotoCommunities)}
@@ -215,7 +215,7 @@ export class Navbar extends Component<NavbarProps, NavbarState> {
                 >
                   {i18n.t("communities")}
                 </button>
-              </li>
+              </li> */}
               <li class="nav-item">
                 <button
                   className="nav-link btn btn-link"
@@ -225,7 +225,7 @@ export class Navbar extends Component<NavbarProps, NavbarState> {
                   {i18n.t("create_post")}
                 </button>
               </li>
-              {this.canCreateCommunity && (
+              {/* {this.canCreateCommunity && (
                 <li class="nav-item">
                   <button
                     className="nav-link btn btn-link"
@@ -235,8 +235,8 @@ export class Navbar extends Component<NavbarProps, NavbarState> {
                     {i18n.t("create_community")}
                   </button>
                 </li>
-              )}
-              <li class="nav-item">
+              )} */}
+              {/* <li class="nav-item">
                 <a
                   className="nav-link"
                   title={i18n.t("support_lemmy")}
@@ -244,7 +244,7 @@ export class Navbar extends Component<NavbarProps, NavbarState> {
                 >
                   <Icon icon="heart" classes="small" />
                 </a>
-              </li>
+              </li> */}
             </ul>
             <ul class="navbar-nav my-2">
               {this.canAdmin && (
