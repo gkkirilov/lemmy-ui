@@ -277,7 +277,7 @@ export class Home extends Component<any, HomeState> {
               <div class="d-block d-md-none">{this.mobileView()}</div>
               {this.posts()}
             </main>
-            <aside class="d-none d-md-block col-md-4">{this.mySidebar()}</aside>
+            {/* <aside class="d-none d-md-block col-md-4">{this.mySidebar()}</aside> */}
           </div>
         )}
       </div>
