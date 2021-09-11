@@ -130,7 +130,7 @@ export class MarkdownTextArea extends Component<
               onPaste={linkEvent(this, this.handleImageUploadPaste)}
               required
               disabled={this.props.disabled}
-              rows={2}
+              rows={3}
               maxLength={this.props.maxLength || 10000}
               placeholder={this.props.placeholder}
             />

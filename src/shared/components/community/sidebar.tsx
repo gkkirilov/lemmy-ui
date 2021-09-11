@@ -73,17 +73,17 @@ export class Sidebar extends Component<SidebarProps, SidebarState> {
       <div>
         <div class="card border-secondary mb-3">
           <div class="card-body">
-            {/* {this.communityTitle()} */}
-            {/* {this.adminButtons()}
+            {this.communityTitle()}
+            {this.adminButtons()}
             {this.subscribe()}
-            {this.createPost()} */}
+            {this.createPost()}
           </div>
         </div>
         <div class="card border-secondary mb-3">
           <div class="card-body">
-            {/* {this.description()} */}
+            {this.description()}
             {/* {this.badges()} */}
-            {/* {this.mods()} */}
+            {this.mods()}
           </div>
         </div>
       </div>

@@ -190,7 +190,7 @@ export class PostForm extends Component<PostFormProps, PostFormState> {
                   })}
                 </div>
               )}
-              <form>
+              {/* <form>
                 <label
                   htmlFor="file-upload"
                   className={`${
@@ -209,7 +209,7 @@ export class PostForm extends Component<PostFormProps, PostFormState> {
                   disabled={!UserService.Instance.myUserInfo}
                   onChange={linkEvent(this, this.handleImageUpload)}
                 />
-              </form>
+              </form> */}
               {this.state.postForm.url && validURL(this.state.postForm.url) && (
                 <a
                   href={`${archiveUrl}/?run=1&url=${encodeURIComponent(
