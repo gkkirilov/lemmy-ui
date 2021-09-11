@@ -671,7 +671,7 @@ export class Home extends Component<any, HomeState> {
         <span class="mr-2">
           <SortSelect sort={this.state.sort} onChange={this.handleSortChange} />
         </span>
-        {this.state.listingType == ListingType.All && (
+        {/* {this.state.listingType == ListingType.All && (
           <a
             href={`/feeds/all.xml?sort=${this.state.sort}`}
             rel="noopener"
@@ -698,7 +698,7 @@ export class Home extends Component<any, HomeState> {
             >
               <Icon icon="rss" classes="text-muted small" />
             </a>
-          )}
+          )} */}
       </div>
     );
   }
