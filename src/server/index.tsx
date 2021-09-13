@@ -152,23 +152,26 @@ server.get("/*", async (req, res) => {
 
            <!-- Current theme and more -->
            ${helmet.link.toString()}
-           
+
            <!-- Icons -->
            ${symbols}
 
-           <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQB3F2TNST"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-ZQB3F2TNST');
-          </script>
+           <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NHP8ZHW');</script>
+            <!-- End Google Tag Manager -->
 
            </head>
 
            <body ${helmet.bodyAttributes.toString()}>
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHP8ZHW"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+
              <noscript>
                <div class="alert alert-danger rounded-0" role="alert">
                  <b>Javascript is disabled. Actions will not work.</b>
