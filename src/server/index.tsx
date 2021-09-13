@@ -156,6 +156,16 @@ server.get("/*", async (req, res) => {
            <!-- Icons -->
            ${symbols}
 
+           <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQB3F2TNST"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-ZQB3F2TNST');
+          </script>
+
            </head>
 
            <body ${helmet.bodyAttributes.toString()}>

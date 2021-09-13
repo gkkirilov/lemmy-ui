@@ -1,6 +1,6 @@
 {
-  "name": "Lemmy",
-  "description": "A link aggregator for the fediverse",
+  "name": "Научи.бг Форум",
+  "description": "Споделяй знание и учи с общността на Научи.бг",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#222222",

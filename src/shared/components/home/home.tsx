@@ -354,15 +354,7 @@ export class Home extends Component<any, HomeState> {
       <div>
         {!this.state.loading && (
           <div>
-            {/* <div class="card border-secondary mb-3">
-              <div class="card-body">
-                {this.trendingCommunities()}
-                {this.createCommunityButton()}
-                {this.exploreCommunitiesButton()}
-              </div>
-            </div>
-
-            {UserService.Instance.myUserInfo &&
+            {/* {UserService.Instance.myUserInfo &&
               UserService.Instance.myUserInfo.follows.length > 0 && (
                 <div class="card border-secondary mb-3">
                   <div class="card-body">{this.subscribedCommunities()}</div>
@@ -371,6 +363,14 @@ export class Home extends Component<any, HomeState> {
 
             <div class="card border-secondary mb-3">
               <div class="card-body">{this.sidebar()}</div>
+            </div>
+
+            <div class="card border-secondary mb-3">
+              <div class="card-body">
+                {/* {this.trendingCommunities()} */}
+                {this.createCommunityButton()}
+                {/* {this.exploreCommunitiesButton()} */}
+              </div>
             </div>
           </div>
         )}

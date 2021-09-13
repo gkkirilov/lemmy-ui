@@ -225,6 +225,17 @@ export class Navbar extends Component<NavbarProps, NavbarState> {
                   {i18n.t("create_post")}
                 </button>
               </li>
+              {this.canCreateCommunity && (
+                <li class="nav-item">
+                  <button
+                    className="nav-link btn btn-link"
+                    onClick={linkEvent(this, this.handleGotoCreateCommunity)}
+                    title={i18n.t("create_community")}
+                  >
+                    {i18n.t("create_community")}
+                  </button>
+                </li>
+              )}
               <li class="nav-item">
                 <button
                   className="nav-link btn btn-link text-primary"
@@ -235,17 +246,6 @@ export class Navbar extends Component<NavbarProps, NavbarState> {
                   </a>
                 </button>
               </li>
-              {/* {this.canCreateCommunity && (
-                <li class="nav-item">
-                  <button
-                    className="nav-link btn btn-link"
-                    onClick={linkEvent(this, this.handleGotoCreateCommunity)}
-                    title={i18n.t("create_community")}
-                  >
-                    {i18n.t("create_community")}
-                  </button>
-                </li>
-              )} */}
               {/* <li class="nav-item">
                 <a
                   className="nav-link"
